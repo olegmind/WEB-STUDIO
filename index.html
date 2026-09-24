@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo2">
+        <div class="logo">
+          <span class="logo-text">WEB </span>STUDIO
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="studio">
+          <ul>
+            <li>Studio</li>
+            <li><a href="#social-media">Contacts</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info%40devstudio.com" target="_blank" rel="noreferrer">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <div class="hero-text">
+          <button class="button" id="open-order-modal" type="button">Order service</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="order-modal" aria-hidden="true" inert>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+        <button class="modal-close" type="button" aria-label="Close modal">×</button>
+
+        <h2 id="order-modal-title">Leave your contacts and we will call you back</h2>
+
+        <form class="modal-form">
+          <label class="field">
+            <span class="field-label">Name</span>
+            <div class="input-wrap">
+              <span class="input-icon">👤</span>
+              <input type="text" placeholder="Name" />
+            </div>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Phone</span>
+            <div class="input-wrap">
+              <span class="input-icon">📞</span>
+              <input type="tel" placeholder="Phone" />
+            </div>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Email</span>
+            <div class="input-wrap">
+              <span class="input-icon">✉️</span>
+              <input type="email" placeholder="Email" />
+            </div>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Comment</span>
+            <div class="input-wrap textarea-wrap">
+              <span class="input-icon">💬</span>
+              <textarea rows="4" placeholder="Text input"></textarea>
+            </div>
+          </label>
+
+          <label class="checkbox-row">
+            <input type="checkbox" />
+            <span>I accept the terms and conditions of the Privacy Policy</span>
+          </label>
+
+          <button class="submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="feature-icon"><img src="images/icon/Icon 1.svg" alt="" /></div>
+        <h2>Strategy</h2>
+        <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+      </div>
+      <div class="grid-item">
+        <div class="feature-icon"><img src="images/icon/Icon 2.svg" alt="" /></div>
+        <h2>Punctuality</h2>
+        <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+      </div>
+      <div class="grid-item">
+        <div class="feature-icon"><img src="images/icon/Icon 3.svg" alt="" /></div>
+        <h2>Diligence</h2>
+        <p>Research and confirm brands with the strongest digital growth opportunities and minimize risk.</p>
+      </div>
+      <div class="grid-item">
+        <div class="feature-icon"><img src="images/icon/Icon 4.svg" alt="" /></div>
+        <h2>Technologies</h2>
+        <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+      </div>
+    </div>
+
+    <section class="team">
+      <div class="container-team">
+        <h1>Our Team</h1>
+        <div class="grid-team">
+          <div class="grid-card">
+            <img src="images/our team/img (7).png" alt="Mark Guerrero" />
+            <h2>Mark Guerrero</h2>
+            <p>Product Designer</p>
+            <div class="team-social">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3h3.2l-7 8 8.2 10h-6.4l-5-6.2-5.7 6.2H2.8l7.4-8.5L2.3 3h6.6l4.5 5.9L18.9 3zm-1.1 15.3h1.8L7.1 4.6H5.2l12.6 13.7z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V7.5c0-.9.3-1.5 1.6-1.5H17V3.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3.1h2.5v8h3z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1zm-1.3 1.8h2.6V19h-2.6V10.3zm4.3 0h2.5v1.2h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7V19h-2.6v-17.6c0-1.3-.1-2.9-1.8-2.9-1.8 0-2 1.4-2 2.8V19h-2.6V10.3z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-card">
+            <img src="images/our team/img (6).png" alt="Tom Ford" />
+            <h2>Tom Ford</h2>
+            <p>Frontend Developer</p>
+            <div class="team-social">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25z" fill="currentColor"/></svg></a>
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3h3.2l-7 8 8.2 10h-6.4l-5-6.2-5.7 6.2H2.8l7.4-8.5L2.3 3h6.6l4.5 5.9L18.9 3zm-1.1 15.3h1.8L7.1 4.6H5.2l12.6 13.7z" fill="currentColor"/></svg></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V7.5c0-.9.3-1.5 1.6-1.5H17V3.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3.1h2.5v8h3z" fill="currentColor"/></svg></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1zm-1.3 1.8h2.6V19h-2.6V10.3zm4.3 0h2.5v1.2h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7V19h-2.6v-17.6c0-1.3-.1-2.9-1.8-2.9-1.8 0-2 1.4-2 2.8V19h-2.6V10.3z" fill="currentColor"/></svg></a>
+            </div>
+          </div>
+
+          <div class="grid-card">
+            <img src="images/our team/img (2).png" alt="Camila Garcia" />
+            <h2>Camila Garcia</h2>
+            <p>Marketing</p>
+            <div class="team-social">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25z" fill="currentColor"/></svg></a>
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3h3.2l-7 8 8.2 10h-6.4l-5-6.2-5.7 6.2H2.8l7.4-8.5L2.3 3h6.6l4.5 5.9L18.9 3zm-1.1 15.3h1.8L7.1 4.6H5.2l12.6 13.7z" fill="currentColor"/></svg></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V7.5c0-.9.3-1.5 1.6-1.5H17V3.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3.1h2.5v8h3z" fill="currentColor"/></svg></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1zm-1.3 1.8h2.6V19h-2.6V10.3zm4.3 0h2.5v1.2h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7V19h-2.6v-17.6c0-1.3-.1-2.9-1.8-2.9-1.8 0-2 1.4-2 2.8V19h-2.6V10.3z" fill="currentColor"/></svg></a>
+            </div>
+          </div>
+
+          <div class="grid-card">
+            <img src="images/our team/img (5).png" alt="Daniel Wilson" />
+            <h2>Daniel Wilson</h2>
+            <p>UI Designer</p>
+            <div class="team-social">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25z" fill="currentColor"/></svg></a>
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3h3.2l-7 8 8.2 10h-6.4l-5-6.2-5.7 6.2H2.8l7.4-8.5L2.3 3h6.6l4.5 5.9L18.9 3zm-1.1 15.3h1.8L7.1 4.6H5.2l12.6 13.7z" fill="currentColor"/></svg></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V7.5c0-.9.3-1.5 1.6-1.5H17V3.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H8v3.1h2.5v8h3z" fill="currentColor"/></svg></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1zm-1.3 1.8h2.6V19h-2.6V10.3zm4.3 0h2.5v1.2h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7V19h-2.6v-17.6c0-1.3-.1-2.9-1.8-2.9-1.8 0-2 1.4-2 2.8V19h-2.6V10.3z" fill="currentColor"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container-portfolio">
+        <h2>Our Portfolio</h2>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="images/our portfolio/img (1).svg" alt="Banking App" />
+            </div>
+            <div class="portfolio-meta">
+              <h3>Banking App</h3>
+              <p>App</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="images/our portfolio/img (2).svg" alt="Cashless Payment" />
+            </div>
+            <div class="portfolio-meta">
+              <h3>Cashless Payment</h3>
+              <p>Marketing</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="images/our portfolio/img (3).svg" alt="Meditation App" />
+            </div>
+            <div class="portfolio-meta">
+              <h3>Meditation App</h3>
+              <p>App</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="images/our portfolio/img (4).svg" alt="Taxi Service" />
+            </div>
+            <div class="portfolio-meta">
+              <h3>Taxi Service</h3>
+              <p>Marketing</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="images/our portfolio/img (5).svg" alt="Screen Illustrations" />
+            </div>
+            <div class="portfolio-meta">
+              <h3>Screen Illustrations</h3>
+              <p>Design</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-thumb">
+              <img src="images/our portfolio/img (1).svg" alt="Online" />
+            </div>
+            <div class="portfolio-meta">
+              <h3>Online</h3>
+              <p>Marketing</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-footer">
+        <div class="logo footer-logo">
+          <span class="logo-text">WEB </span>STUDIO
+        </div>
+
+        <div class="footer-info">
+          <p>
+            Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+          </p>
+        </div>
+
+        <div class="social-block" id="social-media">
+          <p>Social media:</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M40 20C40 25.52 37.76 30.52 34.14 34.14C30.52 37.76 25.52 40 20 40C14.48 40 9.48 37.76 5.86 34.14C2.24 30.52 0 25.52 0 20C0 14.48 2.24 9.48 5.86 5.86C9.48 2.24 14.48 0 20 0C25.52 0 30.52 2.24 34.14 5.86C37.76 9.48 40 14.48 40 20Z" fill="#4D5AE5"/>
+                <path d="M32 12.56C31.11 12.95 30.16 13.21 29.17 13.34C30.19 12.73 30.96 11.77 31.33 10.62C30.38 11.18 29.33 11.58 28.21 11.81C27.31 10.85 26.02 10.25 24.62 10.25C21.89 10.25 19.7 12.46 19.7 15.17C19.7 15.56 19.73 15.94 19.81 16.29C15.72 16.09 12.1 14.13 9.67 11.15C9.25 11.88 9 12.73 9 13.63C9 15.34 9.88 16.85 11.18 17.72C10.39 17.71 9.62 17.48 8.96 17.12C8.96 17.13 8.96 17.15 8.96 17.17C8.96 19.56 10.67 21.55 12.9 22.01C12.5 22.12 12.06 22.17 11.61 22.17C11.3 22.17 10.98 22.15 10.68 22.08C11.32 24.03 13.13 25.46 15.28 25.51C13.6 26.82 11.48 27.61 9.18 27.61C8.77 27.61 8.39 27.59 8 27.54C10.18 28.95 12.76 29.75 15.55 29.75C24.6 29.75 29.55 22.25 29.55 15.75C29.55 15.53 29.54 15.32 29.53 15.11C30.51 14.42 31.33 13.55 32 12.56Z" fill="#F4F4FD"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M40 20C40 25.52 37.76 30.52 34.14 34.14C30.52 37.76 25.52 40 20 40C14.48 40 9.48 37.76 5.86 34.14C2.24 30.52 0 25.52 0 20C0 14.48 2.24 9.48 5.86 5.86C9.48 2.24 14.48 0 20 0C25.52 0 30.52 2.24 34.14 5.86C37.76 9.48 40 14.48 40 20Z" fill="#4D5AE5"/>
+                <path d="M31.98 15.06C31.92 13.78 31.71 12.9 31.42 12.14C31.11 11.34 30.64 10.62 30.03 10.02C29.43 9.41 28.7 8.93 27.91 8.63C27.14 8.34 26.27 8.13 24.99 8.08C23.71 8.01 23.3 8 20.04 8C16.79 8 16.38 8.01 15.1 8.07C13.82 8.13 12.95 8.33 12.19 8.63C11.38 8.93 10.66 9.4 10.06 10.02C9.45 10.62 8.98 11.34 8.67 12.14C8.38 12.9 8.17 13.78 8.12 15.05C8.06 16.34 8.04 16.74 8.04 20C8.04 23.26 8.06 23.67 8.11 24.95C8.17 26.22 8.37 27.1 8.67 27.86C8.98 28.67 9.45 29.39 10.06 29.99C10.66 30.6 11.38 31.07 12.18 31.37C12.95 31.67 13.82 31.87 15.09 31.93C16.37 31.99 16.78 32 20.04 32C23.3 32 23.71 31.99 24.99 31.93C26.26 31.87 27.14 31.67 27.9 31.37C29.51 30.75 30.79 29.47 31.41 27.86C31.7 27.1 31.91 26.22 31.97 24.95C32.02 23.67 32.04 23.26 32.04 20C32.04 16.74 32.03 16.34 31.98 15.06ZM29.82 24.85C29.76 26.03 29.57 26.66 29.4 27.08C29 28.13 28.17 28.96 27.12 29.36C26.7 29.52 26.06 29.72 24.9 29.77C23.63 29.83 23.25 29.84 20.05 29.84C16.85 29.84 16.46 29.83 15.2 29.77C14.03 29.72 13.4 29.52 12.97 29.36C12.45 29.17 11.98 28.86 11.6 28.46C11.2 28.08 10.89 27.61 10.7 27.09C10.54 26.66 10.34 26.03 10.29 24.86C10.23 23.59 10.22 23.21 10.22 20.01C10.22 16.81 10.23 16.43 10.29 15.16C10.34 13.99 10.54 13.36 10.7 12.94C10.89 12.42 11.2 11.94 11.6 11.56C11.99 11.16 12.46 10.86 12.98 10.66C13.4 10.5 14.04 10.3 15.21 10.25C16.47 10.19 16.85 10.18 20.05 10.18C23.26 10.18 23.64 10.19 24.9 10.25C26.07 10.3 26.71 10.5 27.13 10.66C27.65 10.86 28.12 11.16 28.5 11.56C28.9 11.94 29.2 12.42 29.39 12.94C29.55 13.36 29.75 13.99 29.8 15.16C29.86 16.43 29.87 16.81 29.87 20.01C29.87 23.21 29.86 23.59 29.82 24.85ZM20.04 13.84C16.64 13.84 13.88 16.6 13.88 20C13.88 23.41 16.64 26.17 20.04 26.17C23.45 26.17 26.21 23.41 26.21 20C26.21 16.6 23.45 13.84 20.04 13.84ZM20.04 24C17.84 24 16.04 22.21 16.04 20C16.04 17.79 17.84 16 20.04 16C22.25 16 24.04 17.79 24.04 20C24.04 22.21 22.25 24 20.04 24Z" fill="#F4F4FD"/>
+                <path d="M27.89 13.59C27.89 14.39 27.25 15.03 26.45 15.03C25.66 15.03 25.01 14.39 25.01 13.59C25.01 12.8 25.66 12.15 26.45 12.15C27.25 12.15 27.89 12.8 27.89 13.59Z" fill="#F4F4FD"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/" aria-label="Twitter">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M40 20C40 25.52 37.76 30.52 34.14 34.14C30.52 37.76 25.52 40 20 40C14.48 40 9.48 37.76 5.86 34.14C2.24 30.52 0 25.52 0 20C0 14.48 2.24 9.48 5.86 5.86C9.48 2.24 14.48 0 20 0C25.52 0 30.52 2.24 34.14 5.86C37.76 9.48 40 14.48 40 20Z" fill="#4D5AE5"/>
+                <path d="M23.99 11.98H26.19V8.17C25.81 8.12 24.51 8 22.99 8C19.84 8 17.67 9.99 17.67 13.64V17H14.19V21.27H17.67V32H21.95V21.27H25.29L25.82 17H21.95V14.06C21.95 12.83 22.28 11.98 23.99 11.98Z" fill="#F4F4FD"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/" aria-label="LinkedIn">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M40 20C40 25.52 37.76 30.52 34.14 34.14C30.52 37.76 25.52 40 20 40C14.48 40 9.48 37.76 5.86 34.14C2.24 30.52 0 25.52 0 20C0 14.48 2.24 9.48 5.86 5.86C9.48 2.24 14.48 0 20 0C25.52 0 30.52 2.24 34.14 5.86C37.76 9.48 40 14.48 40 20Z" fill="#4D5AE5"/>
+                <path d="M31.99 32V31.99H32V23.2C32 18.89 31.07 15.57 26.04 15.57C23.62 15.57 21.99 16.9 21.33 18.16H21.26V15.98H16.49V31.99H21.46V24.07C21.46 21.98 21.86 19.96 24.44 19.96C26.99 19.96 27.03 22.34 27.03 24.2V32H31.99Z" fill="#F4F4FD"/>
+                <path d="M8.4 15.98H13.37V32H8.4V15.98Z" fill="#F4F4FD"/>
+                <path d="M10.88 8C9.29 8 8 9.29 8 10.88C8 12.47 9.29 13.79 10.88 13.79C12.47 13.79 13.76 12.47 13.76 10.88C13.76 9.29 12.47 8 10.88 8Z" fill="#F4F4FD"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
