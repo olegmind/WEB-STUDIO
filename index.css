@@ -6,6 +6,21 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -130,7 +145,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.62), rgba(46, 47, 66, 0.62)), url("images/people-office 1.svg");
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.72), rgba(46, 47, 66, 0.72)),
+    radial-gradient(circle at top, rgba(77, 90, 229, 0.35), transparent 38%),
+    linear-gradient(135deg, #2e2f42 0%, #4d5ae5 100%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -313,6 +331,8 @@ header {
   max-width: 1128px;
   margin: 0 auto;
   padding: 72px 20px 80px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1128px 420px;
 }
 
 .grid-item {
@@ -347,6 +367,8 @@ header {
 .portfolio {
   background: #e7e9fc;
   padding: 80px 20px 100px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1200px 760px;
 }
 
 .container-portfolio {
@@ -426,6 +448,8 @@ header {
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 1200px 720px;
 }
 
 .container-team {
